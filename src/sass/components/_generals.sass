@@ -1,0 +1,70 @@
+@font-face 
+    font-family: 'DS-DIGI'
+    src: url('../src/fonts/DS-DIGII.TTF')
+
+
+body 
+    background: #000
+    font-family: 'DS-DIGI', Arial, Helvetica, sans-serif
+    color: rgba(#fff, .5)
+
+.container
+    width: 100%
+    height: 100vh
+    // FLEX PROPERTIES 
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .clock
+        z-index: 10
+        position: relative
+        width: 350px
+        border: 10px solid rgba(#DFE0DC, .5)
+        border-radius: 10px
+        padding: 10px
+        // FLEX PROPERTIES 
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .cont-clock
+            font-size: 100px
+
+        .seconds-date
+            margin-top: 5px
+            margin-left: 5px
+            // FLEX PROPERTIES
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .date 
+                font-size: 22px
+                margin-bottom: 5px
+
+            #seconds
+                font-size: 40px
+                text-align: center
+    
+        .btn
+            background-color: rgba(#DFE0DC, .5)
+            position: absolute
+            width: 25px
+            height: 15px
+            border-radius: 5px 5px 0 0
+            z-index: -1
+
+        .btn1 
+            left: 30px
+            top: -25px
+
+        .btn2 
+            left: 30px
+            bottom: -25px
+            border-radius: 0 0 5px 5px
+
+
+        .btn3
+            right: 30px
+            bottom: -25px
+            border-radius: 0 0 5px 5px
